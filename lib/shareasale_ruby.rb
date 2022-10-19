@@ -1,6 +1,14 @@
-require "shareasale_ruby/version"
-require "shareasale_ruby/configuration"
+# frozen_string_literal: true
 
+require 'shareasale_ruby/version'
+require 'shareasale_ruby/configuration'
+
+require 'shareasale_ruby/services/base'
+require 'shareasale_ruby/services/program_maintenance'
+require 'shareasale_ruby/services/report'
+require 'shareasale_ruby/services/transaction'
+
+# base
 module ShareasaleRuby
   class Error < StandardError; end
 
@@ -16,15 +24,5 @@ module ShareasaleRuby
     def configure
       yield(configuration)
     end
-
-    ## base methods -- start
-    def share_sale
-
-    end
-
-    def report_activity_summary
-
-    end
-    ## base methods -- end
   end
 end

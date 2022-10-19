@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
+require 'shareasale_ruby'
 require 'database_cleaner'
 
 RSpec.configure do |config|
