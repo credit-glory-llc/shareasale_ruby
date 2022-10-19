@@ -1,0 +1,14 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+.idea
+.ruby-version
+.rspec_status
+shareasale_ruby-*.gem
+demo.rb
