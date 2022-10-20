@@ -42,7 +42,7 @@ module ShareasaleRuby
       perform_get_request
     end
 
-    def new_lead
+    def new_lead(**args)
       @request_url = "#{base_url}&action=new&transtype=lead&#{args.to_query}"
 
       perform_get_request
