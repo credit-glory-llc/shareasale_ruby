@@ -37,7 +37,7 @@ module ShareasaleRuby
                   "&version=#{version}"
     end
 
-    def get_request
+    def perform_get_request
       # setup request params
       url = URI.parse(request_url)
       req = Net::HTTP::Get.new(url.to_s)
